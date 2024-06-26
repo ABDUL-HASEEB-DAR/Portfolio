@@ -1,7 +1,7 @@
 body {
     display: flex;
     flex-direction: column;
-    background-color: #000000;
+    background-image: linear-gradient(black, rgb(22, 22, 22));
     margin: 0px 100px;
     align-items: center;
     justify-content: center;
@@ -199,7 +199,7 @@ h3 {
 }
 
 .skills-icon:hover {
-    transform: translate(0px, -20px) rotate(360deg);
+    transform: translate(0px, -20px) rotate(360deg) scale(1.4);
 }
 
 .portfolio-btn {
@@ -243,7 +243,7 @@ form {
     background-color: rgba(0, 0, 0, 0);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2); 
+    box-shadow: 0 0 20px rgb(0, 0, 0); 
     transition: transform 0.3s ease; 
 }
 
@@ -307,7 +307,7 @@ textarea {
 
 textarea:focus {
     transform: scale(1.03);
-    border-bottom: none;
+    border: none;
 }
 
 .custom-btn {
