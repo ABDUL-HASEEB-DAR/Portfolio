@@ -3,11 +3,11 @@ import bodyParser from 'body-parser';
 import {dirname} from 'path';
 import {fileURLToPath} from 'url';
 import nodemailer from 'nodemailer';
-import dotenv from 'dotenv';
-dotenv.config();
+// import dotenv from 'dotenv';
+// dotenv.config();
 
 
-const port = 3000;
+// const port = 3000;
 const app = express();
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -67,10 +67,14 @@ app.post('/',(req,res)=>{
     res.redirect('/');
 })
 
-app.listen( port || process.env.PORT, () => {
-    if(process.env.port){
-        console.log('server running on port ' + process.env.PORT);
-    } else {
-        console.log('server is running on port ' + port);
-    }
+// app.listen( port || process.env.PORT, () => {
+//     if(process.env.port){
+//         console.log('server running on port ' + process.env.PORT);
+//     } else {
+//         console.log('server is running on port ' + port);
+//     }
+// });
+
+app.listen(3000, () => {
+    console.log('server running on port'+ port);
 });
