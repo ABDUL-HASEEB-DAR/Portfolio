@@ -3,6 +3,7 @@ import bodyParser from 'body-parser';
 import {dirname} from 'path';
 import {fileURLToPath} from 'url';
 import nodemailer from 'nodemailer';
+require("dotenv").config();
 
 const port = 3000;
 const app = express();
