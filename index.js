@@ -5,14 +5,13 @@ import {fileURLToPath} from 'url';
 import nodemailer from 'nodemailer';
 // import dotenv from 'dotenv';
 // dotenv.config();
-
-
 // const port = 3000;
+
 const app = express();
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(express.static('public'));
+app.use(express.static(__dirname + '/public'));
 
 app.get('/',(req, res)=>{
     res.sendFile(__dirname + '/public/html/index.html');
